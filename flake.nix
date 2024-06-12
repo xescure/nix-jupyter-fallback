@@ -13,10 +13,10 @@
       in {
         devShells.default = pkgs.mkShell {
           buildInputs = [ pkgs.poetry ] ++ [
-            (pkgs.python3.withPackages (ps:
+            (pkgs.python312.withPackages (ps:
               with ps; [
-                ps.jupyter
-                ps.ipython
+                # ps.jupyter
+                # ps.ipython
 
                 # ps.pandas
                 # ps.numpy
